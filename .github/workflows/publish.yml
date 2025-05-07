@@ -78,30 +78,9 @@ jobs:
                   git tag "$VERSION"
                   git push origin "$VERSION"
 
-            - name: Package and Publish Extension
-              env:
-                  VSCE_PAT: ${{ secrets.VSCE_PAT }}
-                  OVSX_PAT: ${{ secrets.OVSX_PAT }}
+            - name: Package Extension
               run: |
-                  # Required to generate the .vsix
-                  vsce package --out "cline-${{ steps.get_version.outputs.version }}.vsix"
-
-                  if [ "${{ github.event.inputs.release-type }}" = "pre-release" ]; then
-                    npm run publish:marketplace:prerelease
-                    echo "Successfully published pre-release version ${{ steps.get_version.outputs.version }} to VS Code Marketplace and Open VSX Registry"
-                  else
-                    npm run publish:marketplace
-                    echo "Successfully published release version ${{ steps.get_version.outputs.version }} to VS Code Marketplace and Open VSX Registry"
-                  fi
-
-            # - name: Get Changelog Entry
-            #   id: changelog
-            #   uses: mindsers/changelog-reader-action@v2
-            #   with:
-            #       # This expects a standard Keep a Changelog format
-            #       # "latest" means it will read whichever is the most recent version
-            #       # set in "## [1.2.3] - 2025-01-28" style
-            #       version: latest
+                  vsce package --out "wizee-${{ steps.get_version.outputs.version }}.vsix"
 
             - name: Create GitHub Release
               uses: softprops/action-gh-release@v1
