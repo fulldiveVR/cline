@@ -1,4 +1,4 @@
-# Cline
+# WizeE (anteriormente Cline)
 
 <p align="center">
         <img src="https://media.githubusercontent.com/media/cline/cline/main/assets/docs/demo.gif" width="100%" />
@@ -26,9 +26,11 @@
 </table>
 </div>
 
-Conheça o Cline: um assistente de IA que pode usar seu **CLI** e **Editor**.
+Conheça o WizeE: um assistente de IA que pode usar seu **CLI** e **Editor**.
 
-Graças às [habilidades avançadas do Claude 3.7 Sonnet](https://www.anthropic.com/claude/sonnet), o Cline pode lidar com tarefas complexas de desenvolvimento de software passo a passo. Com ferramentas que permitem criar e editar arquivos, explorar grandes projetos, usar o navegador e executar comandos no terminal (com sua aprovação), ele pode ajudar você de maneiras que vão além da inclusão de código ou suporte técnico. O Cline pode é capaz inclusive de usar o Model Context Protocol (MCP) para criar novas ferramentas e expandir seus próprios recursos. Embora os scripts de IA autônomas tradicionalmente sejam executados em ambientes isolados, esta extensão oferece uma GUI com um humano no circuito para aprovar cada alteração de arquivo e comando de terminal, fornecendo uma maneira segura e acessível de explorar todo o potencial da IA.
+> **Nota:** WizeE é um fork renomeado do Cline. Todos os recursos e capacidades permanecem, com nova marca e melhorias contínuas.
+
+Graças às [habilidades avançadas do Claude 3.7 Sonnet](https://www.anthropic.com/claude/sonnet), o WizeE pode lidar com tarefas complexas de desenvolvimento de software passo a passo. Com ferramentas que permitem criar e editar arquivos, explorar grandes projetos, usar o navegador e executar comandos no terminal (com sua aprovação), ele pode ajudar você de maneiras que vão além da inclusão de código ou suporte técnico. O WizeE pode é capaz inclusive de usar o Model Context Protocol (MCP) para criar novas ferramentas e expandir seus próprios recursos. Embora os scripts de IA autônomas tradicionalmente sejam executados em ambientes isolados, esta extensão oferece uma GUI com um humano no circuito para aprovar cada alteração de arquivo e comando de terminal, fornecendo uma maneira segura e acessível de explorar todo o potencial da IA.
 
 1. Insira sua tarefa e adicione imagens para transformar mockups em aplicativos funcionais ou corrigir erros através de capturas de tela.
 

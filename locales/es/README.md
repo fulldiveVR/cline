@@ -1,4 +1,4 @@
-# Cline
+# WizeE (anteriormente Cline)
 
 <p align="center">
         <img src="https://media.githubusercontent.com/media/cline/cline/main/assets/docs/demo.gif" width="100%" />
@@ -26,9 +26,11 @@
 </table>
 </div>
 
-Conozca a Cline, un asistente de IA que puede usar su **CLI** y **E**ditor.
+Conozca a WizeE, un asistente de IA que puede usar su **CLI** y **E**ditor.
 
-Gracias a las [habilidades de codificación agencial de Claude 3.7 Sonnet](https://www.anthropic.com/claude/sonnet), Cline puede abordar tareas complejas de desarrollo de software paso a paso. Con herramientas que le permiten crear y editar archivos, explorar grandes proyectos, usar el navegador y ejecutar comandos de terminal (con su aprobación), puede ayudarle de una manera que va más allá de la autocompletación de código o el soporte técnico. Cline incluso puede usar el Model Context Protocol (MCP) para crear nuevas herramientas y expandir sus propias capacidades. Mientras que los scripts de IA autónomos tradicionalmente se ejecutan en entornos aislados, esta extensión ofrece una GUI con un humano en el bucle para aprobar cada cambio de archivo y comando de terminal, proporcionando una forma segura y accesible de explorar el potencial de la IA agencial.
+> **Nota:** WizeE es un fork renombrado de Cline. Todas las funciones y capacidades permanecen, con nueva marca y mejoras continuas.
+
+Gracias a las [habilidades de codificación agencial de Claude 3.7 Sonnet](https://www.anthropic.com/claude/sonnet), WizeE puede abordar tareas complejas de desarrollo de software paso a paso. Con herramientas que le permiten crear y editar archivos, explorar grandes proyectos, usar el navegador y ejecutar comandos de terminal (con su aprobación), puede ayudarle de una manera que va más allá de la autocompletación de código o el soporte técnico. WizeE incluso puede usar el Model Context Protocol (MCP) para crear nuevas herramientas y expandir sus propias capacidades. Mientras que los scripts de IA autónomos tradicionalmente se ejecutan en entornos aislados, esta extensión ofrece una GUI con un humano en el bucle para aprobar cada cambio de archivo y comando de terminal, proporcionando una forma segura y accesible de explorar el potencial de la IA agencial.
 
 1. Ingrese su tarea y agregue imágenes para convertir maquetas en aplicaciones funcionales o solucionar errores con capturas de pantalla.
 2. Cline comenzará analizando su estructura de archivos y ASTs de código fuente, realizando búsquedas Regex y leyendo archivos relevantes para orientarse en proyectos existentes. Al gestionar cuidadosamente la información agregada, Cline puede proporcionar asistencia valiosa incluso en proyectos grandes y complejos sin sobrecargar la ventana de contexto.

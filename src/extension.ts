@@ -27,12 +27,12 @@ let outputChannel: vscode.OutputChannel
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-	outputChannel = vscode.window.createOutputChannel("Cline")
+	outputChannel = vscode.window.createOutputChannel("WizeE")
 	context.subscriptions.push(outputChannel)
 
 	ErrorService.initialize()
 	Logger.initialize(outputChannel)
-	Logger.log("Cline extension activated")
+	Logger.log("WizeE extension activated")
 
 	const sidebarWebview = new WebviewProvider(context, outputChannel)
 
@@ -83,7 +83,7 @@ export function activate(context: vscode.ExtensionContext) {
 	)
 
 	const openClineInNewTab = async () => {
-		Logger.log("Opening Cline in new tab")
+		Logger.log("Opening WizeE in new tab")
 		// (this example uses webviewProvider activation event which is necessary to deserialize cached webview, but since we use retainContextWhenHidden, we don't need to use that event)
 		// https://github.com/microsoft/vscode-extension-samples/blob/main/webview-sample/src/extension.ts
 		const tabWebview = new WebviewProvider(context, outputChannel)
@@ -97,7 +97,7 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 		const targetCol = hasVisibleEditors ? Math.max(lastCol + 1, 1) : vscode.ViewColumn.Two
 
-		const panel = vscode.window.createWebviewPanel(WebviewProvider.tabPanelId, "Cline", targetCol, {
+		const panel = vscode.window.createWebviewPanel(WebviewProvider.tabPanelId, "WizeE", targetCol, {
 			enableScripts: true,
 			retainContextWhenHidden: true,
 			localResourceRoots: [context.extensionUri],
@@ -354,17 +354,17 @@ export function activate(context: vscode.ExtensionContext) {
 						document.lineAt(Math.min(document.lineCount - 1, range.end.line + 3)).text.length,
 					)
 
-					const addAction = new vscode.CodeAction("Add to Cline", vscode.CodeActionKind.QuickFix)
+					const addAction = new vscode.CodeAction("Add to WizeE", vscode.CodeActionKind.QuickFix)
 					addAction.command = {
 						command: "cline.addToChat",
-						title: "Add to Cline",
+						title: "Add to WizeE",
 						arguments: [expandedRange, context.diagnostics],
 					}
 
-					const fixAction = new vscode.CodeAction("Fix with Cline", vscode.CodeActionKind.QuickFix)
+					const fixAction = new vscode.CodeAction("Fix with WizeE", vscode.CodeActionKind.QuickFix)
 					fixAction.command = {
 						command: "cline.fixWithCline",
-						title: "Fix with Cline",
+						title: "Fix with WizeE",
 						arguments: [expandedRange, context.diagnostics],
 					}
 
@@ -439,7 +439,7 @@ export function deactivate() {
 	cleanupTestMode()
 
 	telemetryService.shutdown()
-	Logger.log("Cline extension deactivated")
+	Logger.log("WizeE extension deactivated")
 }
 
 // Set up development mode file watcher

@@ -4,7 +4,7 @@ import { useExtensionState } from "@/context/ExtensionStateContext"
 import { validateApiConfiguration } from "@/utils/validate"
 import { vscode } from "@/utils/vscode"
 import ApiOptions from "@/components/settings/ApiOptions"
-import ClineLogoWhite from "@/assets/ClineLogoWhite"
+import WizeELogoWhite from "@/assets/WizeELogoWhite" // TODO: Replace with actual WizeE logo asset
 import { AccountServiceClient } from "@/services/grpc-client"
 import { EmptyRequest } from "@shared/proto/common"
 
@@ -32,9 +32,9 @@ const WelcomeView = memo(() => {
 	return (
 		<div className="fixed inset-0 p-0 flex flex-col">
 			<div className="h-full px-5 overflow-auto">
-				<h2>Hi, I'm Cline</h2>
+				<h2>Hi, I'm WizeE</h2>
 				<div className="flex justify-center my-5">
-					<ClineLogoWhite className="size-16" />
+					<WizeELogoWhite className="size-16" />
 				</div>
 				<p>
 					I can do all kinds of tasks thanks to breakthroughs in{" "}
@@ -44,6 +44,12 @@ const WelcomeView = memo(() => {
 					agentic coding capabilities and access to tools that let me create & edit files, explore complex projects, use
 					a browser, and execute terminal commands <i>(with your permission, of course)</i>. I can even use MCP to
 					create new tools and extend my own capabilities.
+					<br />
+					<br />
+					<span style={{ color: "var(--vscode-descriptionForeground)" }}>
+						<b>Note:</b> WizeE is a renamed fork of Cline. All features and capabilities remain, with new branding and
+						ongoing improvements.
+					</span>
 				</p>
 
 				<p className="text-[var(--vscode-descriptionForeground)]">

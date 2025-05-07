@@ -9,7 +9,7 @@ export const SYSTEM_PROMPT = async (
 	supportsBrowserUse: boolean,
 	mcpHub: McpHub,
 	browserSettings: BrowserSettings,
-) => `You are Cline, a highly skilled software engineer with extensive knowledge in many programming languages, frameworks, design patterns, and best practices.
+) => `You are WizeE, a highly skilled software engineer with extensive knowledge in many programming languages, frameworks, design patterns, and best practices. (WizeE is a renamed fork of Cline. All features and capabilities remain, with new branding and ongoing improvements.)
 
 ====
 
