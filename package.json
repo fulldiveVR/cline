@@ -48,7 +48,7 @@
 			"activitybar": [
 				{
 					"id": "claude-dev-ActivityBar",
-					"title": "Cline",
+					"title": "WizeE",
 					"icon": "assets/icons/icon.svg"
 				}
 			]
@@ -96,28 +96,28 @@
 			{
 				"command": "cline.openInNewTab",
 				"title": "Open In New Tab",
-				"category": "Cline"
+				"category": "WizeE"
 			},
 			{
 				"command": "cline.dev.createTestTasks",
 				"title": "Create Test Tasks",
-				"category": "Cline",
+				"category": "WizeE",
 				"when": "cline.isDevMode"
 			},
 			{
 				"command": "cline.addToChat",
-				"title": "Add to Cline",
-				"category": "Cline"
+				"title": "Add to WizeE",
+				"category": "WizeE"
 			},
 			{
 				"command": "cline.addTerminalOutputToChat",
-				"title": "Add to Cline",
-				"category": "Cline"
+				"title": "Add to WizeE",
+				"category": "WizeE"
 			},
 			{
 				"command": "cline.focusChatInput",
 				"title": "Jump to Chat Input",
-				"category": "Cline"
+				"category": "WizeE"
 			}
 		],
 		"keybindings": [
@@ -210,7 +210,7 @@
 			]
 		},
 		"configuration": {
-			"title": "Cline",
+			"title": "WizeE",
 			"properties": {
 				"cline.vsCodeLmModelSelector": {
 					"type": "object",
