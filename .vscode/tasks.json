@@ -5,8 +5,8 @@
 	"tasks": [
 		{
 			"label": "npm: protos",
-			"type": "npm",
-			"script": "protos",
+			"type": "shell",
+			"command": "source $HOME/.nvm/nvm.sh && nvm install && nvm exec npm run protos",
 			"problemMatcher": [],
 			"isBackground": false,
 			"presentation": {
@@ -44,8 +44,8 @@
 			"group": "build"
 		},
 		{
-			"type": "npm",
-			"script": "build:webview",
+			"type": "shell",
+			"command": "source $HOME/.nvm/nvm.sh && nvm install && nvm exec npm run build:webview",
 			"group": "build",
 			"problemMatcher": [],
 			"isBackground": true,
